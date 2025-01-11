@@ -1,5 +1,7 @@
 # React
 
+## Components
+
 ## Hooks
 + `useState` use to declare component state variables of any type. The initial (state) value is ignored on after the initial rendering. If using a function as a initializer, make sure the function is pure, has no arguments and returns a value (any type). The `useState` hook is async, meaning the changes do not take place right away when using the `set` function, in this case `setCounter`. 
   + https://react.dev/reference/react/useState

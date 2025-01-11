@@ -37,7 +37,7 @@ export default function App() {
     </main>);
 }
 ```
-  + Executes on unmount
+  + Executes on unmount (clean up purposes)
 ```javascript
 import {useEffect, useState} from "react";
 

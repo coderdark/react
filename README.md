@@ -35,7 +35,7 @@ const [counter, setCounter] = useState(() => {
 setCounter((counter) => counter + 1)
 ```
 ### useEffect
-+ use when connecting to external systems like browser apis, fetching data from a service, for custom hooks, controlling components not written for react (plain vanilla js)
++ Use when connecting to `external systems like browser apis`, `fetching data from a service`, `for custom hooks` and `controlling components not written for react (plain vanilla js)`
 + `useEffect` executes as the component mounts, unmounts and component state updates depending on the dependencies passed.
   + https://react.dev/reference/react/useEffect
   + Execute only on mount (the dependency is an empty array `[]`)

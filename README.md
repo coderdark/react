@@ -1,6 +1,22 @@
 # React
 
 ## Hooks
++ `useState` use to declare component state variables of any type. The initial (state) value is ignored on after the initial rendering. If using a function as a initializer, make sure the function is pure, has no arguments and returns a value (any type). The `useState` hook is async, meaning the changes do not take place right away when using the `set` function, in this case `setCounter`. 
+  + https://react.dev/reference/react/useState
+  + Declaration of component variables
+```javascript
+    const [counter, setCounter] = useState(0);
+```
+  + Declaration of component variable as a function
+```javascript
+const [counter, setCounter] = useState(() => {
+        return 1 - 1
+    });
+```
+  + Modifying values (good practice to use a updater function with the value (`pending state` in this case `counter`) and use it in the return as the `next state`.  This way you make sure the value gets updated in the already running code.
+```javascript
+setCounter((counter) => counter + 1)
+```
 + `useEffect` executes as the component mounts, unmounts and component state updates depending on the dependencies passed.
   + https://react.dev/reference/react/useEffect
   + Execute only on mount (the dependency is an empty array `[]`)

@@ -2,7 +2,7 @@
 
 ## Hooks
 + `useEffect` executes as the component mounts, unmounts and component state updates depending on the dependencies passed.
-+ https://react.dev/reference/react/useEffect
+  + https://react.dev/reference/react/useEffect
   + Execute only on mount (the dependency is an empty array `[]`)
 ```javascript
 import {useEffect, useState} from "react";

@@ -8,6 +8,12 @@
   <ChildComponent/>
   <ChildComponent2/>
 </ParentComponent>
+
+export function ParentComponent({children}){
+  render(<div>
+    {children}
+  </div>);
+}
 ```
 
 ## Hooks

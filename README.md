@@ -3,6 +3,12 @@
 ## Components
 + Rendering -  components rerender when props or state update
 + Pass `children` as a prop, to prevent rendering of children components when the parent component rerenders.
+```javascript
+<ParentComponent>
+  <ChildComponent/>
+  <ChildComponent2/>
+</ParentComponent>
+```
 
 ## Hooks
 + `useState` use to declare component state variables of any type. The initial (state) value is ignored on after the initial rendering. If using a function as a initializer, make sure the function is pure, has no arguments and returns a value (any type). The `useState` hook is async, meaning the changes do not take place right away when using the `set` function, in this case `setCounter`. 

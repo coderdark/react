@@ -17,6 +17,7 @@ export function ParentComponent({children}){
 ```
 
 ## Hooks
+### useState
 + `useState` use to declare component state variables of any type. The initial (state) value is ignored on after the initial rendering. If using a function as a initializer, make sure the function is pure, has no arguments and returns a value (any type). The `useState` hook is async, meaning the changes do not take place right away when using the `set` function, in this case `setCounter`. 
   + https://react.dev/reference/react/useState
   + Declaration of component variables
@@ -33,6 +34,8 @@ const [counter, setCounter] = useState(() => {
 ```javascript
 setCounter((counter) => counter + 1)
 ```
+### useEffect
++ use when connecting to external systems like browser apis, fetching data from a service, for custom hooks, controlling components not written for react (plain vanilla js)
 + `useEffect` executes as the component mounts, unmounts and component state updates depending on the dependencies passed.
   + https://react.dev/reference/react/useEffect
   + Execute only on mount (the dependency is an empty array `[]`)
